@@ -49,12 +49,12 @@ The solution implements a multi-threaded approach where each student is represen
 
 1. Compile the program using g++ with pthread support:
 ```bash
-g++ -o washing_simulation washing_simulation.cpp -pthread
+g++ washing_simulation.cpp
 ```
 
 2. Run the program:
 ```bash
-./washing_simulation
+./a.out
 ```
 
 3. Input format:
@@ -65,7 +65,6 @@ g++ -o washing_simulation washing_simulation.cpp -pthread
 
 1. **Time Units**:
    - All time inputs (arrival, wash, patience) are in seconds
-   - Program uses microsleep (usleep) with 100000 factor for simulation
 
 2. **Queue Management**:
    - Students are processed in FCFS order
